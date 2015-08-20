@@ -45,8 +45,8 @@ echo "Downloading $open_ssl_url"
 	./configure \
 		--with-pcre=pcre-${PCRE_VERSION} \
 		--prefix=/tmp/nginx \
-		--add-module=/${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION} \
-    --with-openssl=/${temp_dir}/nginx-${NGINX_VERSION}/openssl-${OPEN_SSL_VERSION}
+		--add-module=${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION} \
+    --with-openssl=${temp_dir}/nginx-${NGINX_VERSION}/openssl-${OPEN_SSL_VERSION}
 	make install
 )
 
