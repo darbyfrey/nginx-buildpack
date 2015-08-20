@@ -8,7 +8,7 @@ mkfifo $psmgr
 erb config/nginx.conf.erb > config/nginx.conf
 
 #Evaluate to write port file
-erb config/port.erb > config/port
+erb config/port_config.erb > config/port_config
 
 n=1
 while getopts :f option ${@:1:2}
